@@ -11,7 +11,7 @@ echo "|----------------------------------------------------|"
 echo "|----------------------------------------------------|"
 echo "|----------Welcome-----------------------------------|"
 echo "|----------to----------------------------------------|"
-echo "|----------smart-------------------------------------|"
+echo "|----------Future------------------------------------|"
 echo "|----------routine-----------------------------------|"
 echo "|----------------------------------------------------|"
 echo "|----------------------------------------------------|"
@@ -35,13 +35,16 @@ echo "|----------------------------------------------------|"
 echo "|----------------------------------------------------|"
 read x_mode
 
-# mode_developer() {
-#     echo "Mode developer activated "
-#     nohup brave-browser > /dev/null 2>&1
-#     terminator > /dev/null 2>&1
-#     code 
-#     exit
-# }
+mode_developer() {
+    # echo "Mode developer activated "
+    # nohup brave-browser > /dev/null 2>&1
+    # terminator > /dev/null 2>&1
+    # code
+    echo $$
+    kill -9 $$
+    kill $name_process
+    # exit
+}
 mode_musician() {
     echo "Mode musician activated!"
     brave-browser > /dev/null 2>&1
@@ -57,9 +60,7 @@ mode_school() {
 }
 
 
-
 case $x_mode in
-
     1) 
         mode_developer
     ;;
@@ -71,5 +72,4 @@ case $x_mode in
     ;;
     *)
         echo "Please select a valid number"
-
 esac 

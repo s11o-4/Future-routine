@@ -1,0 +1,2 @@
+s11o     29362  1287  1 19:24 ?        00:00:01 /usr/bin/python3 /usr/bin/terminator
+s11o     29432 29371  0 19:26 pts/1    00:00:00 grep terminator
