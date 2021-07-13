@@ -1,3 +1,4 @@
+ 
 #!/bin/bash
 
 x_mode=$1
@@ -8,16 +9,16 @@ mode_developer() {
     terminator > /dev/null 2>&1 &
     code
 }
-
 mode_musician() {
     echo 'Mode musician activated!'
+    clases_guitarra='https://clasesdeguitarra.com.co/'
+    notion='https://www.notion.so/M-sica-a956c8b18c1048eaac675c68b81315cb'
     gui_uno='file:///home/s11o/Documents/Guitar/Curso/Curso%20completo%20de%20guitarra%20electrica%20nivel%201.pdf'
     gui_dos='file:///home/s11o/Documents/Guitar/Curso/Curso%20completo%20de%20guitarra%20electrica%20Nivel%202.pdf' 
     gui_tres='file:///home/s11o/Documents/Guitar/Curso/Curso%20completo%20de%20guitarra%20electrica%20Nivel%203.pdf'
-    clases_guitarra='https://clasesdeguitarra.com.co/'
-    notion = 'https://www.notion.so/M-sica-a956c8b18c1048eaac675c68b81315cb'
-    nohup brave-browser $clases_guitarra $nohup $gui_tres $gui_dos > /dev/null 2>&1
-    nohup gtick > /dev/null 2>&1 &
+		hoja_random='file:///home/s11o/Documents/Guitar/Curso/Hoja%20Random.pdf'
+    nohup brave-browser $clases_guitarra $notion $gui_dos $gui_uno $hoja_random > /dev/null 2>&1
+		nohup gtick > /dev/null 2>&1 &
 }
 mode_school() {
     echo 'Mode student activated!'
@@ -42,8 +43,5 @@ esac
 
 sleep 1
 kill -9 $PPID
-
-
-
 
 #cd Documents/Code/Shell/Future_routineV0/
