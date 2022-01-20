@@ -1,3 +1,3 @@
 # Future_routine
 
-Is just a shell script that helps me with my routine and saves me time!
+Is a shell script that helps me with my cycle (or routine) and saves me time!
